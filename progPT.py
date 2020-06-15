@@ -60,8 +60,48 @@ class letras:
         else:
             print(f"As letras foram encontadas nas posições: {asPosicao}")
 
-
 class numeros:
+    import math
     def __init__(self, num):
         self.num = num
-    #terá mais atualizações em breve
+    #os 4 tipos de calculos principal, para funcionar temos que usar uma lista []
+    def somar(self, lista = []):
+        cont = 0
+        soma = 0
+        if(lista == []):
+            print("A lista está vazia!")
+        else:
+            while cont < len(lista):
+                soma += lista[cont]
+                cont += 1
+            print(f"A soma é: {soma}")
+    def subtrair(self, lista = []):
+        try:
+            cont = 1
+            sub = lista[0]
+            while cont < len(lista):
+                sub -= lista[cont]
+                cont += 1
+            print(f"A subtração é: {sub}")
+        except IndexError:
+            print("A lista está vazia!")
+    def dividir(self, lista = []):
+        try:
+            cont = 1
+            div = lista[0]
+            while cont < len(lista):
+                div /= lista[cont]
+                cont += 1
+            print(f"A divisão é: {div}")
+        except IndexError:
+            print("A lista está vazia!")
+    def multiplicar(self, lista = []):
+        try:
+            cont = 1
+            mul = lista[0]
+            while cont < len(lista):
+                mul *= lista[cont]
+                cont += 1
+            print(f"A multiplicação é: {mul}")
+        except IndexError:
+            print("A lista está vazia!")
