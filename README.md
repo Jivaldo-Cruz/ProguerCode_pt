@@ -1,2 +1,2 @@
-# ProguerCode_pt
-Uma biblioteca que ajuda a programar em português, tudo costumizado. Está biblioteca nos facilita em uso de escrita para desenvolvimento em português.
+# faciliteCode
+Uma biblioteca que ajuda a programar em português, tudo costumizado. Está biblioteca nos facilita em uso de escrita para desenvolvimento em português. As funções já preparadas ajuda-me a programar mais rápido. Ajudar a terminar meus projetos menos dias do que esperado...
