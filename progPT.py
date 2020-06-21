@@ -133,3 +133,11 @@ class numeros:
                     print(x)
         except TypeError:
             print("Obrigatorio números inteiros!")
+    #tipo de número
+    def tipoNumero(self, num):
+        if(type(num) == type(int())):
+            print(f"{num} é do tipo int() -> número inteiros")
+        elif(type(num) == type(float())):
+            print(f"{num} é de tipo float() -> número de tipo decimal")
+        elif(type(num) == type(str())):
+            print(f"{num} é do tipo str()(a-z) e não aceitamos letras!")
