@@ -105,3 +105,31 @@ class numeros:
             print(f"A multiplicação é: {mul}")
         except IndexError:
             print("A lista está vazia!")
+    #factiorial de um número
+    def factorial(self, num):
+        total = 1
+        try:
+            for x in range(num):
+                total *= (num - x)
+            print(total)
+        except TypeError:
+            print("Não aceitamos strings nem floats!")
+    #primo e impar
+    def primo(self, num):
+        print("Os números primos")
+        try:
+            for x in range(num):
+                if(x % 2 == 0):
+                    print(x)
+        except TypeError:
+            print("Obrigatorio números inteiros!")
+    def impar(self, num):
+        print("Os números impares")
+        try:
+            for x in range(num):
+                if(x % 2 == 0):
+                    pass
+                else:
+                    print(x)
+        except TypeError:
+            print("Obrigatorio números inteiros!")
