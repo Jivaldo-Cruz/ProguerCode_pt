@@ -1,9 +1,12 @@
 __autor__ = "Jivaldo Da Cruz"
 
 #
-# um programa simples para usar umas funções e métodos em potuguês
+# um programa simples para usar umas funções e métodos já preparada
 #
 
+##########################################################################################################
+#                                          classe de letras                                              #
+##########################################################################################################
 class letras:
     def __init__(self, valor):
         self.valor = valor
@@ -59,7 +62,19 @@ class letras:
             print("Não existe nenhuma letra desse tipo no parâmetro.")
         else:
             print(f"As letras foram encontadas nas posições: {asPosicao}")
-
+    #pegar todas palavras com mesma inicias e coloca numa lista
+    def iniciasIguais(self, frase):#para melhorar efeito usa uma frase no argumento
+        import re
+        com = re.findall(r"\bf[a-z]*", frase)
+        print(com)
+    #retira as mesma palvras juntas e deixa só uma na frase
+    def retirarIguais(self, frase):#para melhorar efeito usa uma frase no argumento
+        import re
+        com = re.sub(r"(\b[a-z]+) \1", r"\1", frase)
+        print(com)
+##########################################################################################################
+#                                          classe de número                                              #
+##########################################################################################################
 class numeros:
     import math
     def __init__(self, num):
